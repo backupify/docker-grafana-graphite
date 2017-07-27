@@ -1,6 +1,13 @@
 StatsD + Graphite + Grafana 4 + Kamon Dashboards
 ---------------------------------------------
 
+
+### Basic setup guide
+
+1. Run `docker build` to create a grafana 4 image
+2. Run `docker images`, get the image id, and edit `docker-compose.yml` to use the new image id.
+2. Run `make up`
+
 This image contains a sensible default configuration of StatsD, Graphite and Grafana, and comes bundled with a example
 dashboard that gives you the basic metrics currently collected by Kamon for both Actors and Traces. There are two ways
 for using this image:
